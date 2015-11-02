@@ -1,0 +1,244 @@
+
+body {
+	margin: 0;
+	font-family: 'Open Sans', sans-serif;
+
+	background-color: #F2F2F2;
+
+	margin-bottom: 8em;
+}
+
+@media print {
+	body {
+		background-color: #FFF;
+	}
+}
+
+header {
+	background-color: #666;
+	background-image: url('/headerBackground.jpg');
+	background-size: 100%;
+
+	padding: 1em 0 1em;
+
+	color: white;
+	text-shadow: 0px 1px 4px #000;
+
+	border-bottom: solid 10px rgba(0, 0, 0, 0.2);
+}
+
+@media print {
+	header {
+		background: none;
+
+		padding: 1em 0 1em;
+
+		color: #000;
+		text-shadow: none;
+		border-bottom: none;
+	}
+}
+
+header .print-border {
+	display: none;
+}
+
+@media print {
+	header .print-border {
+		display: block;
+		background-color: #666;
+		background-image: url('/headerBackground.jpg');
+		background-size: 100%;
+
+		height: 0.2in;
+	}
+}
+
+header h1 {
+	margin:0;
+	font-size: 3em;
+	padding-top: 1.2em;
+	padding-bottom: 0.5em;
+}
+
+h1, h2, h3 {
+	font-family: 'Slabo 27px', serif;
+	font-weight: normal;
+}
+
+a {
+	color: inherit;
+}
+
+header ul {
+	list-style: none;
+	margin: 0;
+	padding:0;
+
+	/*float: left;*/
+}
+
+@media print {
+	header ul {
+		display: none;
+	}
+}
+
+header ul li {
+	font-size: 1.2em;
+	font-family: 'Inconsolata', monospace;
+	display: inline-block;
+	margin-right: 1em;
+}
+
+header h1 a,
+header ul li a {
+	text-decoration: none;
+	color: #FFF;
+}
+
+header h1 a:hover,
+header ul li a:hover {
+	color: #CCC;
+}
+
+@media print {
+	header h1 a,
+	header ul li a {
+		text-decoration: none;
+		color: #000;
+	}
+}
+
+main {
+	border-top: solid 1px #FFF;
+	padding-top: 1em;
+	line-height: 1.6;
+}
+
+main article {
+	margin-bottom: 10em;
+}
+
+main h1,
+main h2,
+main h3,
+main h4 {
+	page-break-inside: avoid;
+	page-break-after: avoid;
+}
+
+main p {
+	page-break-inside: avoid;
+}
+
+
+main h1 {
+	font-size: 1.7em;
+}
+
+@media print {
+	main h1 {
+		color: rgb(35, 137, 75);
+	}
+}
+
+main h1 a {
+	text-decoration: none;
+}
+
+main h1 a:hover {
+	text-decoration: underline;
+}
+
+main h2 {
+	font-size: 1.5em;
+	color: #126860;
+}
+
+main.contact {
+	font-size: 1.2em;
+}
+
+main h1 {
+	margin: 0;
+}
+
+blockquote,
+ul, ol {
+	padding-left: 1em;
+	margin-left: 1em;
+}
+
+blockquote {
+	border-left: solid 0.2em #BBB;
+
+	color: #444;
+}
+
+blockquote cite {
+	font-size: 0.8em;
+}
+
+
+img.profile-image {
+	display: block;
+	float: left;
+	border-radius: 999px;
+
+	height: 5.6em;
+	width: 5.6em;
+	margin-right: 1em;
+	margin-top: 0;
+}
+
+
+/* Responsive Web Design */
+
+html {
+	font-size: 20px;
+}
+
+div.container {
+	width: 780px;
+	margin: auto;
+	padding: 0px 1em;
+	box-sizing: border-box;
+}
+
+@media (max-width: 999px) {
+
+	html {
+		font-size: 16px;
+	}
+
+	div.container {
+		width: 580px;
+	}
+}
+
+@media (max-width: 599px) {
+
+	html {
+		font-size: 14px;
+	}
+
+	div.container {
+		width: 100%;
+	}
+}
+
+@media (max-width: 470px) {
+	header h1 {
+		font-size: 2em;
+		padding-top: 0.6em;
+	}
+}
+
+@media print {
+	div.container {
+		max-width: 7in;
+	}
+}
+
+
