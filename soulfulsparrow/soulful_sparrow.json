@@ -1,0 +1,23 @@
+{
+	"_cardURL":"http://localhost:8888/img/wte9OsGXV3qcoPav.png",
+	"_order":["soulfulsparrow.com", "find us on facebook", "phone", "email", "address", "hours"],
+
+	"name":"Soulful Sparrow",
+	"phone":"(224) 223-7718",
+	"email":"shopkeeper@soulfulsparrow.com",
+	"address":"10 Douglas Avenue\nElgin, IL 60120",
+	"soulfulsparrow.com":"http://soulfulsparrow.com",
+	"find us on facebook":"https://www.facebook.com/SoulfulSparrow",
+	
+	"hours":{
+		"_order":["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+
+		"Monday":"By Chance",
+		"Tuesday":"11:00 - 6:00",
+		"Wednesday":"11:00 - 8:00",
+		"Thursday":"11:00 - 6:00",
+		"Friday":"11:00 - 6:00",
+		"Saturday":"11:00 - 4:00",
+		"Sunday":"12:00 - 4:00"
+	}
+}
